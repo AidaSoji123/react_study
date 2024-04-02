@@ -1,9 +1,9 @@
 import React from 'react';
 
-const GrandChild = (props) => {
+const GrandChild = () => {
   return (
     <div>
-      <h3>in grandchild {props.y}</h3>
+
     </div>
   );
 }

@@ -1,11 +1,21 @@
 import React from 'react';
 import GrandChild from './GrandChild';
 
-const ChildComponent = (props) => {
+const ChildComponent = ({parentFn}) => {
+
+const childFn = () => {
+ 
+    const dataToSend = 'Data from child component';
+    parentFn(dataToSend);
+        
+  }
+
+
   return (
     <div>
-      <h1>in child {props.x}</h1>
-      <GrandChild y={props.x}/>
+       <GrandChild/>
+       
+       <button onClick={childFn}>data sent to parent</button>
     </div>
   );
 }

@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ChildComponent from './ChildComponent';
 
 const ParentComponent = () => {
-    const data = 'Hello from parent';
+
+    const [data,setData] = useState('');
+
+    const parentFn = (x) => {
+        setData(x);
+    }
+
   return (
     <div>
-      its in Parent  {data}
-      <ChildComponent x={data}/>
+        <h1>Data from the Child: {data} </h1>
+      <ChildComponent parentFn = {parentFn}/>
     </div>
   );
 }
