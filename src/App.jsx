@@ -1,5 +1,6 @@
 
 import './App.css'
+import ParentComponent from './components/ParentComponent'
 
 function App() {
   
@@ -7,6 +8,7 @@ function App() {
   return (
     <div>
     <h1>helloooo</h1>
+    <ParentComponent/>
     </div>
   )
 }
