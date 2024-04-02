@@ -1,6 +1,7 @@
 
 import './App.css'
-import ParentComponent from './components/ParentComponent'
+import Counter from './components/Counter'
+
 
 function App() {
   
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
     <h1>helloooo</h1>
-    <ParentComponent/>
+    <Counter/>
     </div>
   )
 }
